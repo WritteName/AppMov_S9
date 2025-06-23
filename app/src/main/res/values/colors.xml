@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="emerald_primary">#4CAF50</color> <!-- Verde brillante -->
+    <color name="emerald_secondary">#C48A6A</color> <!-- Marrón claro -->
+    <color name="emerald_dark">#3D5A3B</color> <!-- Verde oscuro -->
+    <color name="emerald_background">#2A2A2A</color> <!-- Gris casi negro -->
+
+    <color name="bgLight">#FFFFFF</color>
+    <color name="bgDark">#2A2A2A</color>
+
+    <color name="txtLight">#FFFFFF</color>
+    <color name="txtDark">#000000</color>
+
+    <color name="barLight">#3D5A3B</color>
+    <color name="barDark">#4CAF50</color>
+
+    <color name="btnLight">#4CAF50</color>
+    <color name="btnDark">#3D5A3B</color>
+    <color name="btnDarkNoBG">#B7B7B7</color>
+
+</resources>

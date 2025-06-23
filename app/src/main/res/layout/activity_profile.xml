@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.Material3.Dark.ActionBar"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar2"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/emerald_dark"
+            app:navigationIcon="@drawable/img_back"
+            app:titleTextAppearance="@style/ToolbarTitleStyle"
+            app:title="Profile"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            app:titleTextColor="@color/white"
+            app:menu="@menu/menu_profile">
+        </com.google.android.material.appbar.MaterialToolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout2"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/imgAccount"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:contentDescription="LOGOUser"
+            android:src="@drawable/img_account_48"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/txtCurrentUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sohell Avalos"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/txtCurrentEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/txtCurrentUser"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Tu Correo"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="#7C7C7C"
+            android:layout_marginBottom="4dp"
+            />
+
+        <EditText
+            android:id="@+id/etCorreoActual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/txtName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:enabled="false"
+            android:text="sohelindiego@gmail.com"
+            android:background="@drawable/border"
+            android:padding="12dp"
+            android:textSize="12sp"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/txtCurrentAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/etCorreoActual"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Tu Edad"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="#7C7C7C"
+            android:layout_marginBottom="4dp"
+            />
+
+        <EditText
+            android:id="@+id/etEdadActual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/txtCurrentAge"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:enabled="false"
+            android:text="21"
+            android:background="@drawable/border"
+            android:padding="12dp"
+            android:textSize="12sp"
+            android:inputType="textPersonName"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/btn01"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="300dp"
+
+            android:text="BORRAR CUENTA"
+            android:textColor="@color/emerald_dark"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:backgroundTint="@android:color/transparent"
+            app:strokeColor="@color/emerald_dark"
+            app:strokeWidth="2dp"
+            app:cornerRadius="12dp"
+            />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
