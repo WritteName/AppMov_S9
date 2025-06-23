@@ -9,6 +9,6 @@ Pantalla de Creación de Usuario
 ![image](https://github.com/user-attachments/assets/ecf9c778-f806-4818-bd26-9cddb2abab8b)  
 Pantalla de Visualización de Perfil  
 ![image](https://github.com/user-attachments/assets/95276283-0517-4a23-80d5-db64ad25f594)  
-**EXTRA**
+**EXTRA**  
 Pantalla Principal - Dark Mode  
 ![image](https://github.com/user-attachments/assets/8b304fb2-6fd2-475a-aef0-e5850288fb5f)    
